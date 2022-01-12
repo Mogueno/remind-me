@@ -6,5 +6,6 @@ export function getRealmApp() {
     id: appId,
     timeout: 10000,
   };
-  return new Realm.App(appConfig);
+  const app = new Realm.App(appConfig);
+  return app;
 }
